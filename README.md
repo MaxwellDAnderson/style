@@ -1,2 +1,2 @@
-# style
-A routinely updated style guide.
+# STYLE
+A style guide in the making.

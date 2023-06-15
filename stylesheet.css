@@ -1,0 +1,72 @@
+@font-face {
+  font-family:"Century-Expanded-Regular";
+  src: local("fonts/century-expanded-regular.otf"), 
+  url("fonts/century-expanded-regular.otf");
+}
+
+@font-face {
+  font-family:"Century-Expanded-Italic";
+  src: local("fonts/century-expanded-italic.otf"),
+  url("fonts/century-expanded-italic.otf");
+}
+
+@font-face {
+  font-family:"Cheltenham-Extra-Condensed-Bold";
+  src: local("fonts/cheltenham-extra-condensed-bold.otf"),
+  url("fonts/cheltenham-extra-condensed-bold.otf")
+}
+
+body {
+  font-size: 12pt;
+}
+p, blockquote {
+  font-family:"Century-Expanded-Regular"
+}
+
+
+
+p.indent {
+  text-indent: 0.25in;
+}
+
+i, em {
+  font-family:"Century-Expanded-Italic";
+}
+
+h1 {
+  text-transform:uppercase;
+  font-family:"cheltenham-extra-condensed-bold";
+}
+
+h2 {
+  text-transform:uppercase;
+  font-family:helvetica;
+  font-size:14pt;
+}
+
+dt {
+  font-family:"Century-Expanded-Italic";
+  font-style:"italic";
+  font-weight: bold;
+  padding-bottom: 0.05in;
+  text-align: justify;
+  
+}
+
+dd {
+  font-family:'Century-Expanded-Regular';
+  text-align: justify;
+  text-align: inter-word;
+}
+
+dd.indent {
+  text-indent: 0.25in;
+}
+
+dd.indent > blockquote {
+  text-indent: 0in;
+}
+
+span.small-caps {
+  font-variant:small-caps;
+}

@@ -1,0 +1,89 @@
+@media print {
+  @page {
+    size: 8.5in 11in portrait;
+    margin-left: 1.5in;
+    margin-right: 1.5in;
+    margin-top: 1.5in;
+    margin-bottom: 1.5in;
+    @footnote {
+      float: bottom;
+    }
+  }
+}
+
+
+@font-face {
+  font-family:"Century-Expanded-Regular";
+  src: local("style/fonts/century-expanded-regular.otf"), 
+  url("/MaxwellDAnderson/style/fonts/century-expanded-regular.otf");
+}
+
+@font-face {
+  font-family:"Century-Expanded-Italic";
+  src: local("fonts/century-expanded-italic.otf"),
+  url("/MaxwellDAnderson/style/fonts/century-expanded-italic.otf");
+}
+
+body {
+  font-family:"Century-Expanded-Regular";
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+p {
+  display: block;
+  font-family: "Century-Expanded-Regular";
+}
+
+p.indent {
+  display: block;
+  text-indent: 0.25in;
+}
+
+i, em {
+  display: inline;
+  font-family:"Century-Expanded-Italic"
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+li {
+  padding-left: 20pt;
+}
+
+sc {
+  font-variant: small-caps;
+}
+
+/* CAPS STYLES */
+/* All Capitals */
+.ac {
+  text-transform: uppercase;
+}
+/* Small Capitals */
+.sc {
+  font-variant: small-caps;
+}
+
+span.square {
+  border: 1px solid black;
+  background-color: white;
+  font-size: 12pt;
+}
+span.yellow {
+  background-color: yellow;
+}
+span.green {
+  background-color: greenyellow;
+}
+span.pink {
+  background-color: pink;
+}
+
+span.footnote {
+  float: footnote;
+}

@@ -1,0 +1,47 @@
+@font-face {
+  font-family:"Century-Expanded-Regular";
+  src: local("fonts/century-expanded-regular.otf"), 
+  url("/MaxwellDAnderson/style/fonts/century-expanded-regular.otf");
+}
+
+@font-face {
+  font-family:"Century-Expanded-Italic";
+  src: local("fonts/century-expanded-italic.otf"),
+  url("/MaxwellDAnderson/style/fonts/century-expanded-italic.otf");
+}
+
+@font-face {
+  font-family:"Cheltenham-Extra-Condensed-Bold";
+  src: local("fonts/cheltenham-extra-condensed-bold.otf"),
+  url("fonts/cheltenham-extra-condensed-bold.otf")
+}
+
+StyleGuide {
+  font-family: "Century-Expanded-Regular";
+}
+heading {
+  display: block;
+}
+
+para > sc {
+  display: inline;
+  font-variant: small-caps;
+}
+
+para {
+  display: block;
+  font-family: "Century-Expanded-Regular";
+}
+
+emph {
+  display: inline;
+  font-family: "Century-Expanded-Italic";
+  font-style: italic;
+}
+
+span.square {
+  display: inline;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 12pt;
+}

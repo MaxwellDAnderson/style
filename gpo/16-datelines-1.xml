@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<letter>
+  <dateline>
+    <origin></origin> <!-- Originating Office -->
+    <address></address>
+    <date></date>
+  </dateline>
+</letter>

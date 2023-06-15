@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE StyleGuide SYSTEM "style-guide.dtd">
+<?xml-stylesheet href="gpo-stylesheet-2.css"?>
+
+<StyleGuide>
+  
+  <para>
+    Hello! <emsp /> <sc>Hello</sc> <emph>United Vacuum</emph>
+  </para>
+
+  <para>New</para>
+</StyleGuide>

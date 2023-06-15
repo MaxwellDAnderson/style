@@ -1,0 +1,111 @@
+@font-face {
+  font-family:"OldStandard Italic";
+  src: url("fonts/OldStandard/OldStandard-Italic.otf");
+}
+
+@font-face {
+  font-family:"OldStandard Regular";
+  src: url("fonts/OldStandard/OldStandard-Regular.otf");
+}
+
+@font-face {
+  font-family:"OldStandard Bold";
+  src: url("fonts/OldStandard/OldStandard-Bold.otf");
+}
+
+@font-face {
+  font-family:"OldStandard Bold-Italic";
+  src: url("fonts/OldStandard/OldStandard-BoldItalic.otf");
+}
+
+body {
+  counter-reset:ch;
+  font-family:"OldStandard Regular", serif;
+}
+div {
+  counter-reset: a b c d e f g;
+}
+span.chapter {
+  counter-increment: ch;
+  font-weight:bold;
+  margin-left:0.00in;
+}
+span.chapter::before {
+  content: counter(ch,decimal);
+}
+span.a {
+  /*counter-set:pa;*/
+  counter-increment:a;
+  counter-reset:b;
+  font-weight: bold;
+  margin-left:0.25in;
+}
+span.a::before {
+  content: counter(ch,decimal) "." counter(a,decimal) " ";
+}
+span.b {
+  /*counter-set:pb;*/
+  counter-increment:b;
+  counter-reset:c;
+  margin-left:0.50in;
+  font-weight:bold;
+}
+span.b::before {
+  content: counter(ch,decimal) "." counter(a,decimal) "(" counter(b,lower-alpha) ") ";
+}
+span.c {
+  /*counter-set:pc;*/
+  counter-increment:c;
+  counter-reset:d;
+  margin-left:0.75in;
+  font-weight:bold;
+}
+span.c::before {
+  content: counter(ch,decimal) "." counter(a,decimal) "(" counter(b,lower-alpha) ")" "(" counter(c,decimal) ") ";
+}
+span.d {
+  /*counter-set:pd;*/
+  counter-increment:d;
+  counter-reset:e;
+  margin-left:1in;
+  font-weight:bold;
+}
+span.d::before {
+  content: counter(ch,decimal) "." counter(a,decimal) "(" counter(b,lower-alpha) ")" "(" counter(c,decimal) ")" "(" counter(d,lower-roman) ") ";
+}
+span.e {
+  /*counter-set:pe;*/
+  counter-increment:e;
+  counter-reset:f;
+  margin-left:1.25in;
+  font-weight:bold;
+}
+span.e::before {
+  content: counter(ch,decimal) "." counter(a,decimal) "(" counter(b,lower-alpha) ")" "(" counter(c,decimal) ")" "(" counter(d,lower-roman) ")" "(" counter(e,upper-alpha) ") ";
+}
+span.f {
+  counter-increment:f;
+  counter-reset:g;
+  margin-left:1.5in;
+  font-weight:bold;
+}
+span.f::before {
+  content: counter(ch,decimal) "." counter(a,decimal) "(" counter(b,lower-alpha) ")" "(" counter(c,decimal) ")" "(" counter(d,lower-roman) ")" "(" counter(e,upper-alpha) ")" "(" counter(f,decimal) ") ";
+}
+span.g {
+  counter-increment:g;
+  margin-left:1.75in;
+  font-weight:bold;
+}
+span.g::before {
+  content: counter(ch,decimal) "." counter(a,decimal) "(" counter(b,lower-alpha) ")" "(" counter(c,decimal) ")" "(" counter(d,lower-roman) ")" "(" counter(e,upper-alpha) ")" "(" counter(f,decimal) ")" "(" counter(g,lower-roman) ") ";
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size:12pt;
+}
+.upper {
+  text-transform:uppercase;
+}
+.smallcaps {
+  font-variant:small-caps;
+}

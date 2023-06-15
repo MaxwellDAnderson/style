@@ -1,0 +1,43 @@
+@font-face {
+  font-family:"Century-Expanded-Regular";
+  src: local("style/fonts/century-expanded-regular.otf"), 
+  url("/MaxwellDAnderson/style/fonts/century-expanded-regular.otf");
+}
+
+@font-face {
+  font-family:"Century-Expanded-Italic";
+  src: local("fonts/century-expanded-italic.otf"),
+  url("/MaxwellDAnderson/style/fonts/century-expanded-italic.otf");
+}
+
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin-left: 1.5in;
+    margin-right: 1.5in;
+    margin-top: 1.5in;
+    margin-bottom: 1.5in;
+    orientation: portrait;
+  }
+  div.dateline {
+    text-align: right;
+  }
+  div.dateline > p > span.origin {
+    font-family: "Century-Expanded-Regular";
+    font-variant: small-caps;
+  }
+  /* Address */
+  div.dateline > p > span.addr {
+    font-family: "Century-Expanded-Italic";
+    font-style: italic;
+  }
+  div.dateline > p > span.date {
+    font-family: "Century-Expanded-Italic";
+    font-style: italic;
+  }
+  div.dateline > p > span.dateaddr {
+    font-family: "Century-Expanded-Italic";
+    font-style: italic;
+  }
+
+}
