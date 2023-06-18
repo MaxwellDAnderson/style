@@ -5,9 +5,6 @@
     margin-right: 1.5in;
     margin-top: 1.5in;
     margin-bottom: 1.5in;
-    @footnote {
-      float: bottom;
-    }
   }
 }
 
@@ -84,6 +81,3 @@ span.pink {
   background-color: pink;
 }
 
-span.footnote {
-  float: footnote;
-}
